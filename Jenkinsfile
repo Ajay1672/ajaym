@@ -14,17 +14,17 @@ pipeline {
             }
         }
 
-        stage('Clean') {
-            steps {
-                bat 'mvn clean'
-            }
-        }
+        // stage('Clean') {
+        //     steps {
+        //         bat 'mvn clean'
+        //     }
+        // }
 
-        stage('Package') {
-            steps {
-                bat 'mvn package'
-            }
-        }
+        // stage('Package') {
+        //     steps {
+        //         bat 'mvn package'
+        //     }
+        // }
 
         stage('SonarQube Analysis') {
             steps {
